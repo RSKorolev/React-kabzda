@@ -23,7 +23,7 @@ function App() {
             <OnOff on={true} />
             <OnOff on={false} />
             <OnOff on={true} />
-            <UncontrolledAccordion title={'Menu'} setCollapsed={() => {}} />
+            <UncontrolledAccordion title={'Меню'} />
         </div>
     );
 }
