@@ -2,6 +2,7 @@ import './App.css';
 import Accordion from './components/Accordion/Accordion';
 import { OnOff } from './components/OnOff/OnOff';
 import Rating from './components/Rating/Rating';
+import { UncontrolledAccordion } from './components/UncontrolledAccordion copy/UncontrolledAccordion';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
             <OnOff on={true} />
             <OnOff on={false} />
             <OnOff on={true} />
+            <UncontrolledAccordion title={'Menu'} setCollapsed={() => {}} />
         </div>
     );
 }
