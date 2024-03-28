@@ -3,10 +3,11 @@ import Accordion from './components/Accordion/Accordion';
 import { OnOff } from './components/OnOff/OnOff';
 import Rating from './components/Rating/Rating';
 import { UncontrolledAccordion } from './components/UncontrolledAccordion copy/UncontrolledAccordion';
+import UncontrolleRating from './components/UncontrolleRating/UncontrolleRating';
 
 function App() {
     return (
-        <div>
+        <div className={'App'}>
             <PageTitle title={'This is APP component'} />
             <PageTitle title={'My friends'} />
             Articl 1
@@ -23,7 +24,8 @@ function App() {
             <OnOff on={true} />
             <OnOff on={false} />
             <OnOff on={true} />
-            <UncontrolledAccordion title={'Menu'} setCollapsed={() => {}} />
+            <UncontrolleRating />
+            <UncontrolledAccordion title={'--Menu--'} />
         </div>
     );
 }
