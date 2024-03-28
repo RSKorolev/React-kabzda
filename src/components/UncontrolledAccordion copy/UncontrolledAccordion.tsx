@@ -9,16 +9,8 @@ export function UncontrolledAccordion({ title }: AccordionProps) {
 
     return (
         <div>
-<<<<<<< HEAD
-            <AccordionTitle title={props.title} />
+            <AccordionTitle title={title} />
             <button onClick={() => setCollapsed(!collapsed)}>TOGGLE </button>
-=======
-            <AccordionTitle
-                title={title}
-                collapsed={collapsed}
-                setCollapsed={setCollapsed}
-            />
->>>>>>> 3bdd114c9ab7d58edf945a25463d2d52708cd3d8
             {!collapsed && <AccordionBody />}
         </div>
     );
@@ -26,23 +18,10 @@ export function UncontrolledAccordion({ title }: AccordionProps) {
 
 type AccordionTitleProps = {
     title: string;
-<<<<<<< HEAD
 };
 
-function AccordionTitle(props: AccordionTitlePropsType) {
+function AccordionTitle(props: AccordionTitleProps) {
     return <h3>{props.title}</h3>;
-=======
-    collapsed: boolean;
-    setCollapsed: (isCollapsed: boolean) => void;
-};
-
-function AccordionTitle({
-    title,
-    collapsed,
-    setCollapsed,
-}: AccordionTitleProps) {
-    return <h3 onClick={() => setCollapsed(!collapsed)}>{title}</h3>;
->>>>>>> 3bdd114c9ab7d58edf945a25463d2d52708cd3d8
 }
 
 function AccordionBody() {
