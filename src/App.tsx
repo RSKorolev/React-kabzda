@@ -24,8 +24,12 @@ function App() {
             <OnOff on={true} />
             <OnOff on={false} />
             <OnOff on={true} />
+<<<<<<< HEAD
             <UncontrolleRating />
             <UncontrolledAccordion title={'--Menu--'} />
+=======
+            <UncontrolledAccordion title={'Меню'} />
+>>>>>>> 3bdd114c9ab7d58edf945a25463d2d52708cd3d8
         </div>
     );
 }
