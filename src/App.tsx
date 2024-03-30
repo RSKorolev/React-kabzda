@@ -5,10 +5,12 @@ import { OnOff } from './components/OnOff/OnOff';
 import Rating, { RaitingValueType } from './components/Rating/Rating';
 import UncontrolleRating from './components/UncontrolleRating/UncontrolleRating';
 import { UncontrolledAccordion } from './components/UncontrolledAccordion copy/UncontrolledAccordion';
+import { ControlledOnOff } from './components/ControlledOnOff/ControlledOnOff';
 
 function App() {
     const [raitingValue, setRaitingValue] = useState<RaitingValueType>(0);
-    const [accordionCollapsed, setCollapsed] = useState(true);
+    const [accordionCollapsed, setCollapsed] = useState(false);
+    const [switchOn, setSwitchOn] = useState(true);
     return (
         <div className={'App'}>
             <PageTitle title={'This is APP component'} />
@@ -29,6 +31,7 @@ function App() {
             <OnOff on={true} />
             <UncontrolleRating />
             <UncontrolledAccordion title={'--Menu--'} />
+            <ControlledOnOff on={switchOn} onChange={setSwitchOn} />
         </div>
     );
 }
