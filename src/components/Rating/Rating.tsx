@@ -1,9 +1,9 @@
 import { useState } from 'react';
-export type RaitingValueType = 0 | 1 | 2 | 3 | 4 | 5;
+export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5;
 
 type RatingPropsType = {
     value: 0 | 1 | 2 | 3 | 4 | 5;
-    onClick: (value: RaitingValueType) => void;
+    onClick: (value: RatingValueType) => void;
 };
 
 function Rating(props: RatingPropsType) {
