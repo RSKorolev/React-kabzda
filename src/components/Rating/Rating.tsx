@@ -1,4 +1,3 @@
-import { useState } from 'react';
 export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5;
 
 type RatingPropsType = {
@@ -54,5 +53,4 @@ function Star({ selected, value, onClick }: StarPropsType) {
         </span>
     );
 }
-
-export default Rating;
+export { Rating };
